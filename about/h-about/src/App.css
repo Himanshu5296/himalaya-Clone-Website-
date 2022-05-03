@@ -55,11 +55,32 @@ hr.solid {
 }
 h1{
   color: #006666;
-  margin-left: -125px;
+  margin-left: -185px;
   margin-top: -30px;
 }
 p{
-  margin-left: 80px;
+  margin-left: 100px;
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
+}
+.s2{
+  margin-top: 300px;
+  margin-left: -500px;
+}
+.p{
+  margin-left: -280px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.img2{
+ margin-left: 750px;
+ margin-top: -330px;
+}
+.s3{
+  display: flex;
+}
+h2{
+  color: #006666;
+  margin-left: -185px;
+  margin-top: -30px;
 }

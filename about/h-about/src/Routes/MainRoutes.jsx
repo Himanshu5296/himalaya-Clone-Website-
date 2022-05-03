@@ -6,7 +6,11 @@ import OurStory from '../components/OurStory'
 const MainRoutes = () => {
     return (
       <>
-            <div>MainRoutes</div>
+        <div className='m'>
+          Our Story
+        
+        </div>
+      
             <Navbar />
             <Routes>
                 <Route>

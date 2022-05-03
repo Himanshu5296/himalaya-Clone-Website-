@@ -31,8 +31,29 @@ const OurStory = () => {
                     Mr. Manal had a vision of helping people be well.
                     Today, Himalaya Herbal<br></br> Healthcare has turned a time-honored herbal tradition into a complete range of<br></br> contemporary, proprietary formulas and single herbs dedicated to making<br></br> the world well one person at a time.
                 </p>
-    </div>
-            
+            </div>
+           
+                 <div className='s2'>
+                <h2>The Himalaya Legacy Now Spans Over 90 Years</h2>
+                <p className='p'>Founded in 1930, the Himalaya legacy now spans over 90 years, stretching from
+                    <br></br>one man, to his son, to his grandson. From our humble beginnings in India, our<br></br>
+                    products are now offered in over 100 countries, yet we’re still family owned......
+                    <br></br>
+                    <br></br>
+                    Himalaya offers a full line of clinically-studied herbal formulations, certified USDA <br></br>
+                    organic Single herbs, and a full line of body care products. Integrating the principles<br></br>
+                    of traditional medicine with modern science, Himalaya is a worldwide pioneer<br></br> in the field of scientifically validated herbal healthcare.
+                    <br></br>
+                    <br></br>
+                    Himalaya's North American LEED® Gold-Certified eco-friendly corporate office and <br></br>
+                    warehouse facility are located in Sugar Land, Texas, a community neighboring <br></br>Houston.
+                </p>
+            </div>
+            <div className="img2">
+                <img src='https://i.shgcdn.com/59ff8391-0e4c-47df-9848-556c4521753e/-/format/auto/-/preview/600x850/-/quality/lighter/'alt='him'/>
+            </div>
+           
+           
      </>
       
   )
