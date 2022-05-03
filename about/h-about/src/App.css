@@ -84,3 +84,20 @@ h2{
   margin-left: -185px;
   margin-top: -30px;
 }
+.be2{
+  margin-top: -420px;
+  margin-left: 500px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.img-3{
+  margin-left: -780px;
+  margin-top: 70px;
+}
+.root{
+  margin-left: -340px;
+}
+.be2>p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
