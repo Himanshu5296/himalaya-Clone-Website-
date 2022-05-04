@@ -62,14 +62,30 @@ const OurProcess = () => {
                 <img src='https://i.shgcdn.com/6fdef74e-1e57-4bd4-8f3f-617132184feb/-/format/auto/-/preview/720x700/-/quality/lighter/'alt='him'/>
           </div>
           <div className='farms'>
-              <p>Himalaya chooses farm lands based on soil fertility, suitability and quality, visiting the selected land first to ensure the land is free from soil and water erosion, free from<br></br>
-                  pollution and away from industrial zones, free from municipal waste and the flow of rain water from neighboring fields.
-              <p>Farmers are trained in preparing the land, through to post-harvest management of the herbs, and even in proper drying, packaging, storing and labeling.</p>
-              <p>Himalaya’s farmers use only authenticated starting materials; viable seeds with a good germination percentage. A respective Package of Practices (POP) assures<br></br> adherence to quality, sustainability and careful environmental stewardship at all times.</p>
-              <p>Farmers are trained on earth-friendly organic practices, soil bed preparation, proper irrigation, fertilization and sustainable harvesting, crop rotation, cover crop <br></br>cultivation and organic soil enrichment. No pesticides are allowed to be used.</p>
-              <p>Careful safety measures are put in place for handling threatened plant populations, and farmers are continually trained on the Good Cultivation Practices specific to<br></br> each herb. In addition, farmers are trained on Good Agriculture Collection Practices as well.</p>
-              <p>In addition to initial training, two residential workshops are conducted per year, and supervisors visit the farmer’s field regularly to check for compliance in areas such as<br></br> proper crop management, no chemical usage, no child labor, and appropriate labor hours for adults. Violations do not occur.</p>
-            <p>Himalaya’s agricultural supervisory teams visit farms quarterly, but the frequency of visits may increase depending on the individual needs of the farmer. Himalaya’s <br></br>inspectors and trainers include our own people with Masters Degrees in botany, MBAs in agri-business management, along with agricultural scientists from reputed <br></br>universities</p>
+              <p>Himalaya chooses farm lands based on soil fertility, suitability and quality,
+                  visiting the selected land first to ensure the land is free from soil and water erosion, free from<br></br>
+                  pollution and away from industrial zones, free from municipal
+                  waste and the flow of rain water from neighboring fields.
+                  <p>Farmers are trained in preparing the land, through to post-harvest
+                      management of the herbs, and even in proper drying, packaging,
+                      storing and labeling.</p>
+                  <p>Himalaya’s farmers use only authenticated starting materials;
+                      viable seeds with a good germination percentage.
+                      A respective Package of Practices (POP) assures<br></br>
+                      adherence to quality, sustainability and careful environmental
+                      stewardship at all times.</p>
+                  <p>Farmers are trained on earth-friendly organic practices,
+                      soil bed preparation, proper irrigation, fertilization and sustainable harvesting,
+                      crop rotation, cover crop <br></br>cultivation and organic soil enrichment.
+                      No pesticides are allowed to be used.</p>
+                  <p>Careful safety measures are put in place for handling threatened plant populations,
+                      and farmers are continually trained on the Good Cultivation Practices specific to<br></br> each herb. In addition, farmers are trained on Good Agriculture Collection Practices as well.</p>
+                  <p>In addition to initial training, two residential workshops are conducted per year,
+                      and supervisors visit the farmer’s field regularly to check for compliance in areas such as<br></br> proper crop management, no chemical usage, no child labor, and appropriate labor hours for adults. Violations do not occur.</p>
+                  <p>Himalaya’s agricultural supervisory teams visit farms quarterly, but the frequency
+                      of visits may increase depending on the individual needs of the farmer. Himalaya’s <br></br>
+                      inspectors and trainers include our own people with Masters Degrees in botany,
+                      MBAs in agri-business management, along with agricultural scientists from reputed <br></br>universities</p>
               </p>
               
           </div>

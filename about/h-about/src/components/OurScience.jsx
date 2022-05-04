@@ -7,8 +7,8 @@ const OurScience = () => {
         <img src='https://i.shgcdn.com/a094b44f-0f48-4abf-b25b-549315cc3d98/-/format/auto/-/preview/700x700/-/quality/lighter/'alt="story"/>
 
         </div>
-        <div className='be2'>
-                <h1 className='root'>Our Science</h1>
+        <div className='be2science'>
+                <h1 className='rootscience'>Our Science</h1>
                   <p>The herbs used in Himalaya Herbal Healthcare's scientific product line are also <br></br>used in the world's oldest traditional system of medicine, Ayurveda, which dates<br></br>
                   back over 4,000 years.
                   <br></br>
@@ -40,9 +40,9 @@ const OurScience = () => {
                   knowledge to be used successfully.
                 </p>
           </div>
-           <div className='s2'>
-                <h2>Our Distribution</h2>
-                <p className='p'>Founded in 1930, the Himalaya legacy now spans over 90 years, stretching from
+           <div className='s2science'>
+                <h1>Our Distribution</h1>
+                <p className='pscience'>Founded in 1930, the Himalaya legacy now spans over 90 years, stretching from
                     <br></br>one man, to his son, to his grandson. From our humble beginnings in India, our<br></br>
                     products are now offered in over 100 countries, yet we’re still family owned......
                     <br></br>
@@ -57,7 +57,7 @@ const OurScience = () => {
                 </p>
             </div>
             <div className="img2">
-                <img src='https://i.shgcdn.com/5a1a59af-3931-4d16-bff2-004468e44137/-/format/auto/-/preview/700x700/-/quality/lighter/'alt='him'/>
+                <img src='https://i.shgcdn.com/5a1a59af-3931-4d16-bff2-004468e44137/-/format/auto/-/preview/650x700/-/quality/lighter/'alt='him'/>
           </div>
       </>
   )
