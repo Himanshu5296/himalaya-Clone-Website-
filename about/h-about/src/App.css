@@ -96,6 +96,10 @@ h2{
 }
 .root{
   margin-left: -340px;
+  
+}
+.rootmanufacture{
+  margin-top: -100px;
 }
 .be2>p{
   font-family: 'Times New Roman', Times, serif;
@@ -115,6 +119,48 @@ h2{
   margin-top: -200px;
 }
 .be2process{
+  margin-top: -500px;
+  margin-left: 500px;
+}
+.s2process{
+  margin-top:-10px;
+  margin-left: -100px;
+}
+.process{
+  margin-left: -700px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.processh{
+  margin-left: -750px;
+  margin-top: 10px;
+}
+.img2process{
+  margin-left: 650px;
+  margin-top: -400px;
+}
+.processp{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.farms{
+  margin-left: -300px;
+}
+.farms>p{
+  margin-left: 150px;
+  font-size: 20px;
+}
+.farms>p>p{
+  margin-left: 70px;
+  font-size: 20px;
+}
+.be2m{
   margin-top: -480px;
   margin-left: 500px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.para{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
