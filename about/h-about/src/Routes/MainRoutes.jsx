@@ -5,7 +5,8 @@ import OurRoots from '../components/OurRoots'
 import OurStory from '../components/OurStory'
 import OurProcess from "../components/OurProcess"
 import OurScience from "../components/OurScience"
-import OurP from '../components/OurP'
+// import OurP from '../components/OurP'
+import OurInti from '../components/OurInti'
 
 const MainRoutes = () => {
     return (
@@ -22,7 +23,7 @@ const MainRoutes = () => {
             <Route path='Ourroots' element={<OurRoots />} />
             <Route path='ourprocess' element={<OurProcess />} />
             <Route path='ourscience' element={<OurScience />} />
-            <Route path='ourourinti'element={<OurP />}/>
+            <Route path='ourourinti'element={<OurInti/>}/>
            
                 </Route>
             </Routes>

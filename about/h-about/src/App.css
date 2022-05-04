@@ -123,7 +123,7 @@ h2{
   margin-left: 500px;
 }
 .s2process{
-  margin-top:-10px;
+  margin-top: 350px;
   margin-left: -100px;
 }
 .process{
@@ -181,4 +181,57 @@ h2{
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   margin-left: -200px;
+}
+.rootint{
+  margin-left: 100px;
+}
+
+.init{
+  margin-top: 200px;
+
+}
+.inith{
+  margin-left: -900px;
+  
+  
+  
+}
+.initpara{
+  margin-left: -700px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.img2init{
+  margin-left: 650px;
+  margin-top: -400px;
+}
+.img-3init{
+   margin-left: -780px;
+  margin-top: 70px;
+}
+.be2init{
+  margin-left: 500px;
+  margin-top: -400px;
+}
+.img2lst{
+  margin-left: 700px;
+  margin-top: -300px;
+}
+.be2init{
+  margin-top: -600px;
+}
+.initlastpara{
+  margin-left: -700px;
+  margin-top: 100px;
+
+}
+.rootint{
+  margin-left: 500px;
+}
+.rootsinit2{
+  margin-top: 200px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.rootint4{
+  margin-left: 100px;
 }
