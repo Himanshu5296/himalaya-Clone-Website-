@@ -1,0 +1,122 @@
+import React, { useState } from "react";
+import { ProductCard } from "./ProductCard";
+import "./Product.css";
+import { useDispatch, useSelector } from "react-redux";
+import { filterdata, sortdata } from "../redux/action";
+import {  useNavigate } from "react-router-dom";
+import { ProductFlex } from "./ProductFlex";
+
+export const Products = () => {
+ let navigate  = useNavigate()
+  let data = useSelector((state) => state.productsdata);
+  let dispatch = useDispatch();
+  console.log(data);
+  let [hide, setHide] = useState(false);
+  let [grid , setgrid] = useState(true);
+
+  let handlesort = (e) => {
+    dispatch(sortdata(e.target.value));
+  };
+let handlefilter = (payload)=>{
+  dispatch(filterdata(payload))
+}
+  let handlehide = () => {
+    setHide(!hide);
+  };
+
+  return (
+    <>
+      <h1 className="head">Products</h1>
+      <img onClick={()=>{
+        navigate("/cart")
+      }} 
+          style={{ height: "100%", width: "40px" }}
+          src="https://cdn2.iconfinder.com/data/icons/valentine-special/2048/869_-_Shopping_Bag-512.png"
+        />
+      <div className="productsection">
+        <div className="category">
+          <button className="categorybtn" onClick={handlehide}>
+            <h2> Health Category </h2>
+            <img
+              style={{ height: "12px", transform: hide && "scaleY(-1)" }}
+              src="https://www.shareicon.net/download/2015/10/07/652366_arrows.svg"
+              alt=""
+            />
+          </button>
+          <div
+            className="categorysection"
+            style={{ visibility: hide ? "visible" : "hidden" }}
+          >
+            <p
+              onClick={() => {
+                handlefilter("Herbal Supplements");
+               navigate("/Herbal-Supplements")
+              }}
+            >
+              Herbal Supplements
+            </p>
+            <p
+              onClick={() => {
+                handlefilter("Health Interests");
+                navigate("/Health-Interests")
+              }}
+            >
+              Health Interests
+            </p>
+            <p
+              onClick={() => {
+                handlefilter("Oral Care");
+                navigate("/Oral-Care")
+                
+              }}
+            >
+              Oral Care
+            </p>
+            <p
+              onClick={() => {
+                handlefilter("Personal Care");
+                navigate("/Personal-Care")
+              }}
+            >
+              Personal Care
+            </p>
+          </div>
+        </div>
+        <div className="outer">
+          <div className="filters">
+            <select className="selectfilter" onChange={handlesort}>
+              <option value="Bestselling">Best Selling</option>
+              <option value="featured">Featured</option>
+              <option value="Nasc">Name Ascending</option>
+              <option value="Ndesc">Name Descending</option>
+              <option value="Pasc">Price Ascending</option>
+              <option value="Pdesc">Price Descending</option>
+            </select>
+            <select className="selectage">
+              <option value="Bestselling">12</option>
+              <option value="featured">16</option>
+              <option value="Nasc">32</option>
+              <option value="Ndesc">All</option>
+            </select>
+            <div className="dash" onClick={()=>setgrid(false)}>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="seriesbox" onClick={()=>setgrid(true)}>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        { grid?
+          <div className="productgrid">
+            {data.map((item) => {
+              return <ProductCard key={item.id} item={item} />;
+            })} 
+          </div> :  <ProductFlex/> }
+        </div>
+      </div>
+    </>
+  );
+};
