@@ -1,0 +1,76 @@
+{
+    "CategoryData":
+    [
+        {
+            "id":1,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA-Ashwagandha-90ct-Carton_Bottle-square_1024x.png?v=1607451904",
+            "title":"Supplements",
+            "link":"See All Suppliments"
+        },
+        {
+            "id":2,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/files/WCC-SIMPLY-MINT-RENDER-WITH-BRUSH-High-Res_1024x.png?v=1607451904 ",
+            "title":"Oral Care",
+            "link":"See All Oral Care"
+        },
+        {
+            "id":3,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/files/Face_Wash-Balancing-Box-Bottle-square_1024x.png?v=1607451904",
+            "title":"Presonal Care",
+            "link":"See All Presonal Care"
+        }
+    ],
+    "BestSellersData":
+    [
+        {
+            "id":1,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA-Ashwagandha-90ct-Carton_Bottle-square_1024x.png?v=1607451904",
+            "title":"Organic Ashwagandha",
+            "price":13.95
+        },
+        {
+            "id":2,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
+            "title":"Simply Mint Whitening Toothpaste",
+            "price":5.99
+        },
+        {
+            "id":3,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
+            "title":"LiverCare®",
+            "price":27.95
+        },
+        {
+            "id":4,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_800x.png?v=1595814320",
+            "title":"ImmunoCare®",
+            "price":23.95
+        },
+        {
+            "id":5,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Neem-and-Pom---Box-Tube_800x.png?v=1597744049",
+            "title":"Neem & Pomegranate Original Toothpaste",
+            "price":5.99
+        },
+        {
+            "id":6,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-23_800x.png?v=1590836890",
+            "title":"Organic Amla",
+            "price":18.95
+        },
+        {
+            "id":7,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Bitter-Melon-30---Box-Bottle_800x.png?v=1595862276",
+            "title":"Organic Bitter Melon",
+            "price":11.95
+        },
+        {
+            "id":8,
+            "img":"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Gymnema_Box_Bottle_30s_800x.png?v=1591028093",
+            "title":"Organic Gymnema",
+            "price":12.95
+        }
+    ]
+
+}
+
