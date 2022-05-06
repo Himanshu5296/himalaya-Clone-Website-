@@ -66,3 +66,7 @@
   color: #ffffff;
   font-size: 13px;
 }
+.flexdiv{
+  overflow: hidden;
+  height: 2380px;
+}

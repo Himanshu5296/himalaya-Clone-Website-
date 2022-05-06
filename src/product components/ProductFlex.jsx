@@ -1,28 +1,29 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { storage } from "../redux/action";
 import "./productflex.css";
 
-export const ProductFlex = () => {
-  let data = useSelector((state) => state.productsdata);
-  console.log(data);
+export const ProductFlex = ({item}) => {
+let dispatch = useDispatch()
+let handleCart = (data)=>{
+  dispatch(storage(data))
+ }
 
   return (
     <div className="productflexcontainer">
-      {data.map((el) => {
-        return (
-          <div className="flexitem">
+       <div className="flexitem">
             <div className="fleximage">
-              <img src={el.img} />
+              <img src={item.img} />
             </div>
             <div className="flexdes">
-              <h2>{el.title}</h2>
+              <h2>{item.title}</h2>
               <div>
-                <p> {el.description}</p>
+                <p> {item.description}</p>
               </div>
             </div>
             <div className="flexprice">
-              <p>$ {el.price}</p>
-              <button className="flexadd">
+              <p>$ {item.price}</p>
+              <button className="flexadd" onClick={()=>{handleCart(item)}}>
                 <img
                   style={{ height: "100%", width: "30px" }}
                   src="https://cdn2.iconfinder.com/data/icons/valentine-special/2048/869_-_Shopping_Bag-512.png"
@@ -31,8 +32,6 @@ export const ProductFlex = () => {
               </button>
             </div>
           </div>
-        );
-      })}
     </div>
   );
 };

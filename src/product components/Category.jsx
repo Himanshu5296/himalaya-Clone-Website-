@@ -1,16 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ProductCard } from "./ProductCard";
 import "./Product.css";
-import {  useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import {  useDispatch, useSelector } from 'react-redux';
+import {Link, useParams} from 'react-router-dom';
+import { filterdata } from '../redux/action';
 
 
 
 export const Category = () => {
   let data = useSelector((state) => state.filterdata);
+  let dispatch = useDispatch()
+  let HerbalSupplements = useParams()
+  console.log(HerbalSupplements.HerbalSupplements)
+  
+  useEffect(()=>{
+dispatch(filterdata(HerbalSupplements.HerbalSupplements))
+  },[HerbalSupplements])
   
   return (<>  
-      <h1 className="head">{data[0].category}</h1>
+   <div className="links">
+      <Link className="link" to="/">Home</Link> 
+      <p>/</p>
+      <Link className="link" to="/">{HerbalSupplements.HerbalSupplements}</Link>
+</div>
+      <h1 className="head">{HerbalSupplements.HerbalSupplements}</h1>
       <div className="productsection">
         <div className="category">
           <button className="categorybtn" >

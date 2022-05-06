@@ -14,11 +14,13 @@
 }
 .productgrid {
   display: grid;
-  grid-template-columns: repeat(4, 23%);
+  grid-template-columns: repeat(4, 24%);
   grid-template-rows: 360px;
   gap: 20px;
   width: 100%;
   justify-content: center;
+  height: 1060px;
+  overflow: hidden;
 }
 
 .selectfilter {
@@ -131,6 +133,7 @@
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 .add {
   display: flex;
   align-items: center;
@@ -171,21 +174,68 @@
   cursor: pointer;
   color: #66765f;
 }
-
-.dash>div{
+.dash{
   cursor: pointer;
-  margin-top: 2px;
-  height: 4px;
-  width : 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.dash>div{
+  height: 5px;
+  width : 20px;
   background-color: #333333;
 }
 .seriesbox{
   cursor: pointer;
   display: flex;
-  gap : 2px
+  gap : 1px
 }
 .seriesbox>div{
-  height: 8px;
+  height: 10px;
   width: 4px;
   border: 1px solid black;
+}
+
+.links{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #f7f8fa;
+  padding-left:50px;
+}
+.link{
+
+  font-size: 12px;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  color: #777777;
+}
+.links>p{
+  font-family: Poppins, sans-serif;
+  color: #777777;
+}
+
+
+.showmore{
+  display: flex;
+  justify-content: center;
+}
+.showbtn{
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: rgba(0,0,0,0);
+    position: relative;
+    color: #333333;
+    font-size: 14px;
+    border: 1px solid  #333333 ;
+    height: 44px;
+    padding-left: 29px;
+    padding-right: 29px;
+    letter-spacing: inherit;
+    padding: 5px 20px 4px;
+    line-height: 33px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
 }

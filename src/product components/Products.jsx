@@ -3,29 +3,36 @@ import { ProductCard } from "./ProductCard";
 import "./Product.css";
 import { useDispatch, useSelector } from "react-redux";
 import { filterdata, sortdata } from "../redux/action";
-import {  useNavigate } from "react-router-dom";
+import {  useNavigate,Link } from "react-router-dom";
 import { ProductFlex } from "./ProductFlex";
 
 export const Products = () => {
+  let [hide, setHide] = useState(false);
+  let [grid , setgrid] = useState(true);
+  let [over,setOver] = useState(false)
  let navigate  = useNavigate()
   let data = useSelector((state) => state.productsdata);
   let dispatch = useDispatch();
   console.log(data);
-  let [hide, setHide] = useState(false);
-  let [grid , setgrid] = useState(true);
+ 
 
   let handlesort = (e) => {
     dispatch(sortdata(e.target.value));
   };
-let handlefilter = (payload)=>{
-  dispatch(filterdata(payload))
-}
+// let handlefilter = (payload)=>{
+//   dispatch(filterdata(payload))
+// }
   let handlehide = () => {
     setHide(!hide);
   };
 
   return (
     <>
+    <div className="links">
+      <Link className="link" to="/">Home</Link> 
+      <p>/</p>
+      <Link className="link" to="/">Products</Link>
+    </div>
       <h1 className="head">Products</h1>
       <img onClick={()=>{
         navigate("/cart")
@@ -49,24 +56,24 @@ let handlefilter = (payload)=>{
           >
             <p
               onClick={() => {
-                handlefilter("Herbal Supplements");
-               navigate("/Herbal-Supplements")
+                // handlefilter("Herbal Supplements");
+               navigate("/HerbalSupplements")
               }}
             >
               Herbal Supplements
             </p>
             <p
               onClick={() => {
-                handlefilter("Health Interests");
-                navigate("/Health-Interests")
+                // handlefilter("Health Interests");
+                navigate("/HealthInterests")
               }}
             >
               Health Interests
             </p>
             <p
               onClick={() => {
-                handlefilter("Oral Care");
-                navigate("/Oral-Care")
+                // handlefilter("Oral Care");
+                navigate("/OralCare")
                 
               }}
             >
@@ -74,8 +81,8 @@ let handlefilter = (payload)=>{
             </p>
             <p
               onClick={() => {
-                handlefilter("Personal Care");
-                navigate("/Personal-Care")
+                // handlefilter("Personal Care");
+                navigate("/PersonalCare")
               }}
             >
               Personal Care
@@ -98,11 +105,13 @@ let handlefilter = (payload)=>{
               <option value="Nasc">32</option>
               <option value="Ndesc">All</option>
             </select>
-            <div className="dash" onClick={()=>setgrid(false)}>
+            <div className="dash" onClick={()=>{setgrid(false)
+            setOver(false)}}>
               <div></div>
               <div></div>
             </div>
-            <div className="seriesbox" onClick={()=>setgrid(true)}>
+            <div className="seriesbox" onClick={()=>{setgrid(true)
+            setOver(false)}}>
               <div></div>
               <div></div>
               <div></div>
@@ -110,11 +119,18 @@ let handlefilter = (payload)=>{
             </div>
           </div>
         { grid?
-          <div className="productgrid">
+          <div className="productgrid" style={{height:over&&"auto"}}>
             {data.map((item) => {
               return <ProductCard key={item.id} item={item} />;
             })} 
-          </div> :  <ProductFlex/> }
+          </div> : <div className="flexdiv" style={{height:over&&"auto"}}> {data.map((item) => {
+              return <ProductFlex key={item.id} item={item} />;
+            })} </div> }
+            <div className="showmore">
+            <button className="showbtn" onClick={()=>{
+             setOver(true)
+            }}>Show more</button>
+            </div> 
         </div>
       </div>
     </>
