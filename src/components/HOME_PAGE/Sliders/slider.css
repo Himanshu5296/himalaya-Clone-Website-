@@ -1,0 +1,46 @@
+.main-slider-div{
+    display: flex;
+    margin-left: 11%;
+    width: 75%;
+    gap: -10px;
+    margin-bottom: 5%;
+    cursor: pointer;
+
+}
+.slider-div{
+    width: 100%;
+}
+.image{
+    width: 280px;
+    object-fit: contain;
+    padding-left: 20%;
+    height: 280px;
+}
+.map-div{
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+.icon{
+   margin-left: 5%;
+}
+.arrow{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.arrow1{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.slider-title{
+    font-size: 20px;
+    color: black;
+}
+.slider-title:hover{
+    text-decoration: underline;
+}
+

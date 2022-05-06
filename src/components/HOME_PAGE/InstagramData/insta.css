@@ -1,0 +1,87 @@
+.main-insta-div{
+    width: 81%;
+    margin: auto;
+    padding-right: -30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-family: Poppins, sans-serif
+}
+.instaImages-div{
+    display: flex;
+    gap: 3%;
+}
+.instaImages{
+    height: 330px;
+    width: 344px;
+}
+/* .instaImages::before{ 
+    border: solid red;
+    background-color: aqua;
+} */
+.hover-box{
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    gap: 3%;
+    cursor: pointer;
+}
+.logos{
+    height: 700px;
+    width: 800px;
+}
+.caption{
+    font-size: 25px;
+    text-align: justify;
+    padding-right: 2%;
+    overflow: scroll;
+}
+.caption p{
+    color: grey;
+
+}
+.insta-id p:hover{
+    color: rgb(92, 89, 89);
+    text-decoration: underline;
+}
+.details-insta-div{
+    display: flex;
+    gap: 3%;
+    padding-left: 0%;
+    line-height: 0px;
+}
+.details{
+    width: 80px;
+    height: 80px ;
+    border-radius: 50%;
+}
+.insta-id{
+    margin-top: -5%;
+}
+.insta-id p{
+    font-size: 20px;
+    color: grey;
+}
+.images-insta{
+    background-color: rgba(0, 0, 0, 0.972);
+    
+}
+.images-insta:hover>.instahover{
+    visibility: visible;
+}
+.instaImages-div .images-insta img:hover{
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.instahover{
+  visibility: hidden;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: -10%;
+  margin-top: 8.5%;
+  z-index: 1;
+}
+.logo{
+    padding-bottom: 20px;
+}

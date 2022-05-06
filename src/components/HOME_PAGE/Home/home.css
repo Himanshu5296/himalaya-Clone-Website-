@@ -1,0 +1,165 @@
+.background-image{
+    background-image: url('https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720.jpg?v=1608662725');
+    height: 710px;
+    margin-top: -80px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.background-image-data{
+    margin-left: -50%;
+    padding-top: 17%;
+    justify-content: flex-start;
+    font-family: Poppins, sans-serif;
+    /* padding-left: -100%; */
+}
+.line{
+    margin-left: -3.5%;
+    font-size: 18px;
+    
+}
+.line2{
+    margin-left: -9.5%;
+    line-height: 4px;
+    font-size: 18px;
+}
+.button{
+    margin-left: -8%;
+    margin-top: 1%;
+    width: 8%;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: #5db;
+    border: none;
+}
+.ASHWAGANDHA{
+    background-color: white;
+    padding-left: 1160px ;
+    margin-right: 1260px;
+    font-size: 43px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+/* css for body part...................................................... */
+.category-data{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.category-img{
+    width: 379.9px;
+    height: 379.9px;
+    height: auto;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    transition: all 3s ease;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.link p{
+    color: grey;
+    font-weight: 400;
+}
+.link p:hover{
+    text-decoration: underline;
+}
+.category-img:hover {
+    transform: scale(1.1);
+}
+.flower-div{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: left;
+    background-color: aliceblue;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 4%;
+}
+
+.flower-div img{
+    height: auto;
+    /* width: 30%; */
+    justify-content: left;
+    vertical-align: middle;
+    border-style: none;
+    max-width: 45%;
+    margin-left: -25%;
+    /* height: auto; */
+}
+.details-div{
+    text-align:justify;
+    margin-left: -8%;
+    
+}
+.details-div p:nth-child(1){
+    font-size: 29px;
+    line-height: 15px;
+}
+.details-div p:nth-child(2){
+    font-size: 25px;
+    line-height: 20px;
+}
+.details-div p:nth-child(3){
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.name{
+    background-color: black;
+}
+.media{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    /* font-weight: bold; */
+    /* padding-right: 2%; */
+    
+    font-family: Poppins,sans-serif;
+    justify-content: space-between;
+}
+.media p{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 500;
+    /* padding-bottom: 23px; */
+}
+.social-media{
+    display: flex;
+    gap: 10%;
+    padding-left: -3%;
+    
+}
+.fb-img{
+    height: 60px;
+    width: 60px; 
+    margin: 0.1%;
+}
+.social-media img{
+   padding-top: 25px;
+}
+.insta-img{
+    margin-top: -2%;
+    height: 70px;
+    width: 70px;
+}
+.home_page{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
