@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { storage } from "../redux/action";
-import { saveData } from "../utils/loacalStorage";
 import "./Product.css";
 
 export const ProductCard = ({ item }) => {

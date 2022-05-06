@@ -1,42 +1,47 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import "./Product.css";
-import {  useDispatch, useSelector } from 'react-redux';
-import {Link, useParams} from 'react-router-dom';
-import { filterdata } from '../redux/action';
-
-
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useParams } from "react-router-dom";
+import { filterdata } from "../redux/action";
+import { ProductFlex } from "./ProductFlex";
+import "./productflex.css";
 
 export const Category = () => {
   let data = useSelector((state) => state.filterdata);
-  let dispatch = useDispatch()
-  let HerbalSupplements = useParams()
-  console.log(HerbalSupplements.HerbalSupplements)
-  
-  useEffect(()=>{
-dispatch(filterdata(HerbalSupplements.HerbalSupplements))
-  },[HerbalSupplements])
-  
-  return (<>  
-   <div className="links">
-      <Link className="link" to="/">Home</Link> 
-      <p>/</p>
-      <Link className="link" to="/">{HerbalSupplements.HerbalSupplements}</Link>
-</div>
+  let [grid, setgrid] = useState(true);
+  let dispatch = useDispatch();
+  let HerbalSupplements = useParams();
+  console.log(HerbalSupplements.HerbalSupplements);
+
+  useEffect(() => {
+    dispatch(filterdata(HerbalSupplements.HerbalSupplements));
+  }, [HerbalSupplements]);
+
+  return (
+    <>
+      <div className="links">
+        <Link className="link" to="/">
+          Home
+        </Link>
+        <p>/</p>
+        <Link className="link" to="/">
+          {HerbalSupplements.HerbalSupplements}
+        </Link>
+      </div>
       <h1 className="head">{HerbalSupplements.HerbalSupplements}</h1>
       <div className="productsection">
         <div className="category">
-          <button className="categorybtn" >
+          <button className="categorybtn">
             <h2>Product type</h2>
             <img
-              style={{ height: "14px",  }}
+              style={{ height: "14px" }}
               src="https://www.shareicon.net/download/2015/10/07/652366_arrows.svg"
               alt=""
             />
           </button>
-         
         </div>
-        
+
         <div className="outer">
           <div className="filters">
             <select className="selectfilter">
@@ -53,11 +58,21 @@ dispatch(filterdata(HerbalSupplements.HerbalSupplements))
               <option value="Nasc">32</option>
               <option value="Ndesc">All</option>
             </select>
-            <div className="dash">
+            <div
+              className="dash"
+              onClick={() => {
+                setgrid(false);
+              }}
+            >
               <div></div>
               <div></div>
             </div>
-            <div className="seriesbox" >
+            <div
+              className="seriesbox"
+              onClick={() => {
+                setgrid(true);
+              }}
+            >
               <div></div>
               <div></div>
               <div></div>
@@ -65,13 +80,22 @@ dispatch(filterdata(HerbalSupplements.HerbalSupplements))
             </div>
           </div>
 
-          <div className="productgrid">
-            {data.map((item) => {
-              return <ProductCard key={item.id} item={item} />;
-            })}
-          </div>
+          {grid ? (
+            <div className="productgrid">
+              {data.map((item) => {
+                return <ProductCard key={item.id} item={item} />;
+              })}
+            </div>
+          ) : (
+            <div className="flexdiv" style={{ height: "auto" }}>
+              {" "}
+              {data.map((item) => {
+                return <ProductFlex key={item.id} item={item} />;
+              })}{" "}
+            </div>
+          )}
         </div>
-        </div>
-         </>)
-  }
-
+      </div>
+    </>
+  );
+};

@@ -140,5 +140,39 @@ export let data = [{
    category : "PersonalCare",
    description : "Why put up with overly-drying soaps and cleansers? Treat your skin to radiant, luxurious and lather-rich Himalaya Botanique Hydrating Face Wash. Aloe Vera helps bring out your skin’s natural moisture,..."
 },
+{
+    id:17,
+   img : "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1590836814",
+   title : "Curcumin Complete™",
+   price :18.99,
+   category : "HerbalSupplements",
+   description : "Try Curcumin Complete to promote range of motion and comfortable movement, and to assist your body in its own natural mechanisms that affect your joints.* Suggested Use Adults take 1..."
+},
+{
+    id:18,
+   img : "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001",
+   title : "GlucoCare®",
+   price :24.95,
+   category : "HerbalSupplements",
+   description : "GlucoCare contains plant-based ingredients used for centuries in Ayurveda for supporting blood sugar levels already within normal range. It also provides support to the pancreas beta cells that store and..."
+},
+{
+    id:19,
+   img : "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/InvigoratingFaceWash_1024x.png?v=1595909620",
+   title : "Face Wash: Invigorating",
+   price :8.99,
+   category : "PersonalCare",
+   description : "Give your skin a healthy-looking glow every day with Himalaya Botanique Invigorating Face Wash. Extracts of Cinnamon Bark awaken and invigorate your face for a fresh feeling, Lemon Peel uplifts..."
+},
+{
+    id:20,
+   img : "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-2_1024x.jpg?v=1591028203",
+   title : "Kids Toothpaste - Cool Mint",
+   price :4.99,
+   category : "OralCare",
+   description : "With just enough mint for your child’s tender taste buds, our fluoride-free Kids Cool Mint Toothpaste combines real ingredients with great taste that keeps kids brushing longer. With no compromise..."
+},
+
+
 
 ]
