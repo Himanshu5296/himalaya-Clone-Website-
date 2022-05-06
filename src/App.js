@@ -4,7 +4,8 @@ import { Products } from './product components/Products';
 import {Routes, Route} from "react-router-dom"
 import { Category } from './product components/Category';
 import { Cart } from './product components/Cart';
-import { ProductFlex } from './product components/ProductFlex';
+import {Address} from "./PaymentCard/Address"
+import {PaymentCard} from "./PaymentCard/PaymentCard"
 function App() {
   return (
     <div className="App">
@@ -14,9 +15,11 @@ function App() {
      <Route path='/:HealthInterests' element={<Category/>}/>
      <Route path='/:OralCare' element={<Category/>}/>
      <Route path='/:PersonalCare' element={<Category/>}/>
-     <Route path='/cart' element={<Cart/>}/>
+     <Route path='/cart/*' element={<Cart/>}/>
+     <Route path="/address/*" element={<Address/>}/>
+     <Route path="/payment" element={<PaymentCard/>}/>
    </Routes>
-   {/* <ProductFlex/> */}
+   
     </div>
   );
 }

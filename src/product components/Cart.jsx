@@ -48,7 +48,7 @@ export const Cart = () => {
       </div>
       {cartitems.map((el) => {
         return (
-          <div className="cartitem">
+          <div className="cartitem" key={el.id}>
             <div
               onClick={() => {
                 handleremove(el.id);
@@ -128,7 +128,9 @@ export const Cart = () => {
           <div className="amountdiv">
             <h3>Subtotal: ${totalprice}</h3>
             <h1>Grand Total: ${totalprice}</h1>
-            <button>PROCEED TO CHECKOUT</button>
+            <button onClick={()=>{
+              navigate("/address")
+            }}>PROCEED TO CHECKOUT</button>
           </div>
         </div>
       </div>

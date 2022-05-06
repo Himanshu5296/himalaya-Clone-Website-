@@ -95,12 +95,12 @@ export const reducer = (state = inits, { type, payload }) => {
       let updatedel = state.cartdata.filter((el) => {
         return el.id !== payload;
       });
+      
+      saveData("cartData", updatedel);
       let updatetotal = updatedel.reduce((acc, el) => {
         return acc + el.payprice;
       }, 0);
-      saveData("totalprice", updatedel);
-
-      saveData("cartData", updatedel);
+      saveData("totalprice", updatetotal);
       return {
         ...state,
         cartdata: updatedel,
