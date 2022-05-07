@@ -11,7 +11,7 @@
     width: 100%;
 }
 .image{
-    width: 280px;
+    width: 75%;
     object-fit: contain;
     padding-left: 20%;
     height: 280px;
@@ -19,7 +19,7 @@
 .map-div{
     justify-content: center;
     text-align: center;
-    display: block;
+    display: flex;
 }
 .icon{
    margin-left: 5%;
@@ -27,13 +27,14 @@
 .arrow{
     height: 50px;
     width: 50px;
-    margin-right: 10px;
+    margin-right: 4%;
     cursor: pointer;
+    position: relative;
 }
 .arrow1{
     height: 50px;
     width: 50px;
-    margin-left: 10px;
+    margin-left: 4%;
     cursor: pointer;
 }
 .slider-title{
@@ -42,5 +43,45 @@
 }
 .slider-title:hover{
     text-decoration: underline;
+}
+.map-div .bag{
+    margin-left: 40%;
+    margin-top: 3%;
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+    .main-slider-div{
+        display: flex;
+        margin-left: 0%;
+        width: 70%;
+        gap: 0;
+        margin-bottom: 5%;
+        cursor: pointer;
+    
+    }
+    .image{
+        /* width: 280px; */
+        object-fit: contain;
+        padding-left: 0%;
+        height: 280px;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+
+    .main-slider-div{
+        display: flex;
+        margin-left: 0%;
+        width: 70%;
+        gap: 0;
+        margin-bottom: 5%;
+        cursor: pointer;
+    
+    }
+    .image{
+        /* width: 280px; */
+        object-fit: contain;
+        padding-left: 0%;
+        height: 280px;
+    }
 }
 

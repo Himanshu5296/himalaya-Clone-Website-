@@ -32,7 +32,9 @@ export default function BasicModal() {
     getData()
   },[])
   return (
+    <>
     <div className='main-insta-div'>
+     
       <div onClick={handleOpen} className='instaImages-div'>
         {
           data.map((item)=>( 
@@ -43,6 +45,7 @@ export default function BasicModal() {
           ))
         }
       </div>
+      <div>
       <Modal
         open={open}
         onClose={handleClose}
@@ -78,6 +81,8 @@ export default function BasicModal() {
           </div>
         </Box>
       </Modal>
+      </div>
     </div>
+    </>
   );
 }

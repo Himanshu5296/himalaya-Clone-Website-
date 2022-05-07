@@ -2,14 +2,41 @@ import "./navbar.css"
 import { Link, NavLink } from 'react-router-dom'
 import React, { useState } from 'react'
 import searchBtn from '../../Images/search.png'
+// import X from '../../Images/X.jpg'
+
 import X from '../../Images/X.jpg'
+import lines from '../../Images/3lines.jpg'
+import { useNavigate } from "react-router-dom"
+import Register from "../../../SignIn/Register"
+import SignIn from "../../../SignIn/SignIn"
+
 
 
 
 const Navbar = () => {
+    const navigate=useNavigate()
     const [toggle,setToggle]=useState(false)
+    const [close, setClose]=useState(false)
     return (
         <div className="navbar-nav">
+            <div className={close ? 'side-bar':"side-bar2"}>
+                <div className='close-div'>
+                    <img src={X} alt="" className='close-icon' onClick={(()=>setClose(false))}/>
+                    <p onClick={(()=>setClose(false))}>Close</p>
+                </div>
+                <div className='nav-data'>
+                    <p onClick={(()=>navigate("/Shop"))}>Shop</p>
+                    <p>About</p>
+                    <p>Store Locator</p>
+                </div>
+                    <hr className='hr'/>
+                <div className='account-data'>
+                    <h3>My Account</h3>
+                    <p>Sign in</p>
+                    <p>Register</p>
+                    <p>Checkout</p>
+                </div>
+            </div>
             <div className={toggle ? "search-div" : 'search-box'}>
                 <div className="whatAreYouLookingFor">
                     <p> What are you Looking for?</p>
@@ -25,8 +52,10 @@ const Navbar = () => {
                 ON ALL ORDERS OVER $35
             </div>
             <nav className='wrapper'>
+                {/* <Toggle/> */}
                 <div className='logo'>
-                    <img src="https://leap.himalayawellness.com/IOD/Content/images/login/header_logo.png" alt="" />
+                    <img src={lines} alt="" className="Th-lines" onClick={(()=>setClose(true))} />
+                    <img src="https://leap.himalayawellness.com/IOD/Content/images/login/header_logo.png" alt="" className="himalaya" onClick={(()=>navigate('/'))}/>
                 </div>
 
                 <div className='nav-links'>
@@ -39,10 +68,10 @@ const Navbar = () => {
                                         <header>Hearbal Suppliments</header>
                                         <div className='mega-links'>
                                             <div>
-                                                <NavLink to='' className='Link'>Single Herb Suppliments</NavLink>
+                                                <NavLink to='/HerbalSupplements' className='Link'>Single Herb Suppliments</NavLink>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Multi-Ingredient Suppliments</Link>
+                                                <Link to='/HerbalSupplements' className='Link'>Multi-Ingredient Suppliments</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -50,24 +79,24 @@ const Navbar = () => {
                                         <header>Oral Care</header>
                                         <div className='mega-links'>
                                             <div>
-                                                <Link to='' className='Link'>Adult Toothpaste</Link>
+                                                <Link to='/OralCare' className='Link'>Adult Toothpaste</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Kids Toothpaste</Link>
+                                                <Link to='/OralCare' className='Link'>Kids Toothpaste</Link>
                                             </div>
                                         </div>
                                     </div>
                                     <div className='row'>
-                                        <header>Presonal Care</header>
+                                        <header>Personal Care</header>
                                         <div className='mega-links'>
                                             <div>
-                                                <Link to='' className='Link'>Face Care</Link>
+                                                <Link to='/PersonalCare' className='Link'>Face Care</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Cleansing bars</Link>
+                                                <Link to='/PersonalCare' className='Link'>Cleansing bars</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Balm</Link>
+                                                <Link to='/PersonalCare' className='Link'>Balm</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -78,47 +107,22 @@ const Navbar = () => {
                                         <header>Health Interests</header>
                                         <div className='mega-links'>
                                             <div>
-                                                <Link to='' className='Link'>Blood Sugar</Link>
+                                                <Link to='/HealthInterests' className='Link'>Blood Sugar</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Barin & Cognitive</Link>
+                                                <Link to='/HealthInterests' className='Link'>Barin & Cognitive</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Digestion</Link>
+                                                <Link to='/HealthInterests' className='Link'>Digestion</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Energy & Vitality</Link>
+                                                <Link to='/HealthInterests' className='Link'>Energy & Vitality</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Hair, Skin & Nails</Link>
+                                                <Link to='/HealthInterests' className='Link'>Hair, Skin & Nails</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Heart & Cardio</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='row'>
-                                        <header>
-                                            <br />
-                                        </header>
-                                        <div className='mega-links'>
-                                            <div>
-                                                <Link to='' className='Link'>Immune Support</Link>
-                                            </div>
-                                            <div>
-                                                <Link to='' className='Link'>Joint & Mobility</Link>
-                                            </div>
-                                            <div>
-                                                <Link to='' className='Link'>Liver & Cleanse</Link>
-                                            </div>
-                                            <div>
-                                                <Link to='' className='Link'>Men's Wellness</Link>
-                                            </div>
-                                            <div>
-                                                <Link to='' className='Link'>Respiratory</Link>
-                                            </div>
-                                            <div>
-                                                <Link to='' className='Link'>Sleep</Link>
+                                                <Link to='/HealthInterests' className='Link'>Heart & Cardio</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -128,16 +132,41 @@ const Navbar = () => {
                                         </header>
                                         <div className='mega-links'>
                                             <div>
-                                                <Link to='' className='Link'>Stress & Mood</Link>
+                                                <Link to='/HealthInterests' className='Link'>Immune Support</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Urinary</Link>
+                                                <Link to='/HealthInterests' className='Link'>Joint & Mobility</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Weight Management</Link>
+                                                <Link to='/HealthInterests' className='Link'>Liver & Cleanse</Link>
                                             </div>
                                             <div>
-                                                <Link to='' className='Link'>Women's Wellness</Link>
+                                                <Link to='/HealthInterests' className='Link'>Men's Wellness</Link>
+                                            </div>
+                                            <div>
+                                                <Link to='/HealthInterests' className='Link'>Respiratory</Link>
+                                            </div>
+                                            <div>
+                                                <Link to='/HealthInterests' className='Link'>Sleep</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='row'>
+                                        <header>
+                                            <br />
+                                        </header>
+                                        <div className='mega-links'>
+                                            <div>
+                                                <Link to='/HealthInterests' className='Link'>Stress & Mood</Link>
+                                            </div>
+                                            <div>
+                                                <Link to='/HealthInterests' className='Link'>Urinary</Link>
+                                            </div>
+                                            <div>
+                                                <Link to='/HealthInterests' className='Link'>Weight Management</Link>
+                                            </div>
+                                            <div>
+                                                <Link to='/HealthInterests' className='Link'>Women's Wellness</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -156,27 +185,28 @@ const Navbar = () => {
                     <Link to="/About" className='LINK'>About</Link>
                     <Link to='/Store Locator' className='LINK'>Store Locator</Link>
                 </div>
-                <div>
-
-                </div>
-                <div className='icons'>
-                    <img src="https://www.linkpicture.com/q/search_9.png" alt="" onClick={()=>setToggle(true)} />
-                </div>
-                <div className='hover_drop-down'>
+         
+                <div className="rightside-icons">
                     <div className='icons'>
-                        <img src="https://www.linkpicture.com/q/userlogo.png" alt="" />
+                        <img src="https://www.linkpicture.com/q/search_9.png" alt="" onClick={()=>setToggle(true)} className="icon-img" />
                     </div>
-                    <div className='mini_drop-box'>
-                        <div className='grid'>
-                            <Link className='link-l' to={''}>Sign In</Link>
-                            <Link className='link-l' to={''}>Register</Link>
-                            <Link className='link-l' to={''}>Checkout</Link>
+                    <div className='hover_drop-down'>
+                        <div className='icons'>
+                            <img src="https://www.linkpicture.com/q/userlogo.png" alt="" className="icon-img"/>
+                        </div>
+                        <div className='mini_drop-box'>
+                            <div className='grid'>
+                                <Link className='link-l' to={'/SignIn'}>Sign In</Link>
+                                <Link className='link-l' to={'/Register'}>Register</Link>
+                                <Link className='link-l' to={'/Checkout'}>Checkout</Link>
+                            </div>
                         </div>
                     </div>
+                    <Link to='/Cart' className='icons'>
+                        <img src="https://www.linkpicture.com/q/shopping-bag.png" alt="" className="icon-img" />
+                    </Link>
                 </div>
-                <div className='icons'>
-                    <img src="https://www.linkpicture.com/q/shopping-bag.png" alt="" />
-                </div>
+                
             </nav>
 
         </div>

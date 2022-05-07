@@ -27,3 +27,26 @@
 .main-div p{
     color: grey;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .data{
+        font-size: 16px;
+        /* padding-bottom: -1000px;
+        color: black; */
+    }
+    .main-div{
+        height: 120px;
+        margin-bottom: 9%;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    .data{
+        font-size: 16px;
+        /* padding-bottom: -1000px;
+        color: black; */
+    }
+    .main-div{
+        height: 120px;
+        margin-bottom: 9%;
+    }
+}
