@@ -1,0 +1,465 @@
+.background-image{
+    background-image: url('https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720.jpg?v=1608662725');
+    height: 710px;
+    margin-top: -80px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home_page{
+    overflow-y: hidden;
+    /* margin-bottom: -10%; */
+}
+.background-image-data{
+    margin-left: -50%;
+    padding-top: 17%;
+    justify-content: flex-start;
+    font-family: Poppins, sans-serif;
+    /* padding-left: -100%; */
+}
+.back-img{
+    visibility: hidden; 
+}
+.line{
+    margin-left: -3.5%;
+    font-size: 18px;
+    
+}
+.line2{
+    margin-left: -9.5%;
+    line-height: 4px;
+    font-size: 18px;
+}
+.button{
+    margin-left: -8%;
+    margin-top: 1%;
+    width: 8%;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: #5db;
+    border: none;
+}
+.ASHWAGANDHA{
+    background-color: white;
+    width: 25%;
+    /* margin: auto; */
+    margin-left: 30%;
+    /* padding-left: 1160px ;
+    margin-right: 1260px; */
+    font-size: 43px;
+    font-weight: bold;
+    /* align-items: center; */
+    /* padding-top: 0.3%; */
+    /* padding-left: 15%; */
+    /* padding-bottom: 0.8%; */
+    height: 90px;
+}
+.ASHWAGANDHA p{
+    text-align: right;
+    padding-top: 3%;
+    padding-right: 3%;
+}
+/* css for body part...................................................... */
+.category-data{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.category-img{
+    width: 100%;
+    height: 379.9px;
+    height: auto;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    transition: all 3s ease;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.link p{
+    color: grey;
+    font-weight: 400;
+}
+.link p:hover{
+    text-decoration: underline;
+}
+.category-img:hover {
+    transform: scale(1.1);
+}
+.flower-div{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: left;
+    background-color: aliceblue;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 4%;
+}
+.flower-div img{
+    height: auto;
+    /* width: 30%; */
+    justify-content: left;
+    vertical-align: middle;
+    border-style: none;
+    max-width: 45%;
+    margin-left: -25%;
+    /* height: auto; */
+}
+.details-div{
+    text-align:justify;
+    margin-left: -8%;
+    
+}
+.details-div p:nth-child(1){
+    font-size: 29px;
+    line-height: 15px;
+}
+.details-div p:nth-child(2){
+    font-size: 25px;
+    line-height: 20px;
+}
+.details-div p:nth-child(3){
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.name{
+    background-color: black;
+}
+.media{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    /* font-weight: bold; */
+    /* padding-right: 2%; */
+    font-family: Poppins,sans-serif;
+    justify-content: space-between;
+}
+.media p{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 500;
+    /* padding-bottom: 23px; */
+}
+.social-media{
+    display: flex;
+    gap: 10%;
+    padding-left: -3%;
+    
+}
+.fb-img{
+    height: 60px;
+    width: 60px; 
+    margin: 0.1%;
+}
+.social-media img{
+   padding-top: 25px;
+}
+.insta-img{
+    margin-top: -2%;
+    height: 70px;
+    width: 70px;
+}
+.home_page{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+.main-insta-img{
+    width: 80%;
+    margin: auto;
+    visibility: hidden;
+    position:absolute;
+}
+.main-insta-img div{
+    display: flex;
+    margin-left: 0.1%;
+    gap: 3%;
+}
+.instahover3{
+    visibility: hidden;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-left: -10%;
+    margin-top: 8.5%;
+    z-index: 1;
+  }
+.images-insta2{
+    background-color: rgba(0, 0, 0, 0.972);
+    width: 80%;
+    margin: auto;
+    overflow-x: hidden;
+    
+}
+.images-insta2:hover>.instahover3{
+    visibility: visible;
+}
+.divforinsta .images-insta2 img:hover{
+    opacity: 0.5;
+    visibility: visible;
+}
+
+
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .home_page{
+        overflow-x: hidden;
+    }
+    .background-image{
+        visibility: hidden;
+
+
+    }
+    .main-insta-img{
+        width: 80%;
+        margin: auto;
+        visibility: hidden;
+        position:absolute;
+    }
+    .back-img{
+        visibility: visible;
+        font-family: Poppins,sans-serif;
+        margin-top: 31%;
+        /* margin-bottom: 20%; */
+    }
+    .back-img img{
+        width: 100%;
+        margin-top: -50%;
+    }
+    .ASHWAGANDHA-s{
+        font-size: 25px;
+        color: #5db;
+    }
+    .line-s,.line2-s{
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .button-s{
+        background-color: #5db;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 5px;
+    }
+    .shoph1{
+        margin-top: -10%;
+    }
+    .category-data{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 50%;
+        /* margin-left: 0px; */
+        padding-top: 50px;
+    }
+    .besth1{
+        margin-top: 15%;
+    }
+    /* slider */
+    .flower-div{
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: left;
+        background-color: aliceblue;
+        font-family: Poppins, sans-serif;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+    .flower-div img{
+        height: auto;
+        /* width: 30%; */
+        justify-content: left;
+        vertical-align: middle;
+        border-style: none;
+        max-width: 45%;
+        margin-left: -25%;
+        /* height: auto; */
+    }
+    .details-div{
+        text-align:justify;
+        /* margin-left: -8%; */
+        
+    }
+    .details-div p:nth-child(1){
+        font-size: 20px;
+        text-align:justify;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        /* line-height: 15px; */
+    }
+    .details-div p:nth-child(2){
+        font-size: 20px;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        /* line-height: 20px; */
+    }
+    .details-div p:nth-child(3){
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+        padding: 13px;
+        /* line-height: 25px; */
+    }
+    .media p{
+        margin-top: 18%;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        /* padding-bottom: 23px; */
+    }
+    .fb-img{
+        height: 30px;
+        width: 30px; 
+        margin: 0.1%;
+    }
+    .insta-img{
+        margin-top: -3%;
+        height: 35px;
+        width: 35px;
+    }.social-media{
+        margin-top: 2%;
+    }
+    .main-insta-img{
+        width: 80%;
+        margin: auto;
+        visibility: visible;
+        position:absolute;
+    }
+    .instaImages2{
+        height: 85px;
+        width: 100%;
+    }
+    .main-insta-img{
+        margin-left: 10%;
+    }
+    
+}
+/* medium screens */
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    .home_page{
+        overflow-x: hidden;
+    }
+    .background-image{
+        visibility: hidden;
+       /* width:50%; */
+    }
+    .back-img{
+        visibility: visible;
+       
+    }
+    /* .back-img img{
+        width: 0%;
+    } */
+    .back-img img{
+        width: 100%;
+        margin-top: -50%;
+    }
+    .ASHWAGANDHA-s{
+        font-size: 30px;
+        color: #5db;
+    }
+    .line-s,.line2-s{
+        font-size: 25px;
+        line-height: 10px;
+    }
+    .button-s{
+        background-color: #5db;
+        color: white;
+        font-size: 25;
+        font-weight: bold;
+        border: none;
+        padding: 7px;
+    }
+    .shoph1{
+        margin-top: -10%;
+    }
+    .category-data{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 50%;
+        padding-top: 50px;
+        /* justify-content: center; */
+    }
+    .flower-div{
+        display: grid;
+        width: 80%;
+        margin: auto;
+        justify-content: left;
+        background-color: aliceblue;
+        font-family: Poppins, sans-serif;
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+    .details-div p:nth-child(1){
+        font-size: 28px;
+        text-align:justify;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        /* line-height: 15px; */
+    }
+    .details-div p:nth-child(2){
+        font-size: 24px;
+        width: 80%;
+        margin: auto;
+        /* padding: 10px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* line-height: 20px; */
+    }
+    .details-div p:nth-child(3){
+        font-size: 24px;
+        width: 80%;
+        margin: auto;
+        padding: 13px;
+        /* line-height: 25px; */
+    }
+    .media p{
+        margin-top: 18%;
+        font-size: 30px;
+        /*   */
+
+        font-weight: 500;
+        /* padding-bottom: 23px; */
+    }
+    .fb-img{
+        height: 50px;
+        width: 50px; 
+        margin: 0.1%;
+    }
+    .insta-img{
+        margin-top: -3%;
+        height: 55px;
+        width: 55px;
+    }.social-media{
+        margin-top: 6%;
+    }
+    .main-insta-img{
+        width: 80%;
+        margin: auto;
+        visibility: visible;
+        position:absolute;
+    }
+    .instaImages2{
+        height: 85px;
+        width: 100%;
+    }
+    .main-insta-img{
+        margin-left: 10%;
+    }
+}
+

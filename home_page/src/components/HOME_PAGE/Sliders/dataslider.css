@@ -1,0 +1,58 @@
+.reviewsSlider{
+    width: 80%;
+    margin: auto;
+    font-family: Poppins, sans-serif
+    
+}
+.color-div{
+    height: 5px;
+    background-color:#5db;
+    width: 10%;
+    margin-left: 6%;
+}
+.main-div{
+  
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+    height: 160px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.data{
+    font-size: 23px;
+    padding: 0px 0px 0px 20px;
+    color: black;
+}
+.main-div p{
+    color: grey;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .data{
+        font-size: 16px;
+        /* padding-bottom: -1000px;
+        color: black; */
+    }
+    .main-div{
+        height: 120px;
+        margin-bottom: 9%;
+    }
+    .reviewsSlider{
+        overflow-x: hidden;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    .data{
+        font-size: 16px;
+        /* padding-bottom: -1000px;
+        color: black; */
+    }
+    .main-div{
+        height: 120px;
+        margin-bottom: 9%;
+    }
+    .reviewsSlider{
+        overflow-x: hidden;
+    }
+}

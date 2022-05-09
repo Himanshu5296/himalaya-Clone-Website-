@@ -1,0 +1,30 @@
+
+.accountHistory{
+    height:150px;
+    width:90%;
+    /* border:1px solid; */
+    margin:auto;
+    text-align: left;
+    font-family: Poppins, sans-serif;
+}
+.accountDetails{
+    height:280px;
+    width:90%;
+    /* border:1px solid; */
+    margin:auto;
+    text-align: left;
+    margin-top:90px;
+    font-family: Poppins, sans-serif;
+}
+.story{
+    font-size: 18px;
+    text-align: justify;
+    font-family: Poppins,sans-serif;
+}
+.create{
+    text-align: left;
+    padding-left: 10%;
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    
+}

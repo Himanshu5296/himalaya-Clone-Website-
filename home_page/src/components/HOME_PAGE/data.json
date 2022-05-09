@@ -70,6 +70,71 @@
             "title":"Organic Gymnema",
             "price":12.95
         }
+    ],
+
+    "reviewData":
+    [
+        {
+            "id":1,
+            "data":"“We've tried countless fluoride-free toothpastes, and this is our favorite!”",
+            "line":"Botanique Complete Care Toothpaste - Peppermint"
+        },
+        {
+            "id":2,
+            "data":"“I'm amazed. I'm less irritable and tired, and more calm and centered.”",
+            "line":"Ashwagandha"
+        },
+        {
+            "id":3,
+            "data":"“Recommended to me by my local health food store. This product is a godsend.”",
+            "line":"LiverCare®"
+        },
+        {
+            "id":4,
+            "data":"“I've seen such a drastic difference in my memory, it's hard to believe.”",
+            "line":"Bacopa"
+        },
+        {
+            "id":5,
+            "data":"“Other whitening toothpastes have not given me these kinds of results.”",
+            "line":"Botanique Complete Care Whitening Toothpaste - Mint"
+        },
+        {
+            "id":6,
+            "data":"“Since taking this product, I have cut back considerably on sugary snacks.”",
+            "line":"Gymnema"
+        },
+        {
+            "id":7,
+            "data":"“I will never use another toothpaste as long as I can get this one.”",
+            "line":"Botanique Neem & Pomegranate Toothpaste"
+        },
+        {
+            "id":8,
+            "data":"“I work in the supplement industry, and THIS is the Turmeric you should use.”",
+            "line":"Turmeric 95®"
+        },
+        {
+            "id":9,
+            "data":"“Seriously, they are the most effective cough drops ever.”",
+            "line":"Koflet Lazenges"
+        },
+        {
+            "id":10,
+            "data":"“Can't go a day without it. A total game-changer for stress.”",
+            "line":"Ashwagandha"
+        },
+        {
+            "id":11,
+            "data":"“I feel extremely focused. I was joking to myself that I feel like Einstein.”",
+            "line":"Bacopa"
+        },
+        {
+            "id":12,
+            "data":"“My 3-year-old loves it and asks me if she can brush her teeth. Need I say more?”",
+            "line":"Botanique Kids Toothpaste - Bubble Gum"
+        }
+
     ]
 
 }

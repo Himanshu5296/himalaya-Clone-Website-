@@ -1,0 +1,45 @@
+.btnSucccess {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(228, 98, 51);
+}
+.btnSucccess:hover {
+    background-color: #07ab40;
+    color: white;
+}
+.order{
+    color: #555;
+    font-size: 25px;
+    font-weight:500 ;
+    font-family: Poppins, sans-serif;
+    /* line-height: 10px; */
+}
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    .successful{
+        justify-content: center;
+        margin-left: 70%;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+   
+    .successful{
+        justify-content: center;
+        margin-left: 20%;
+        width: 100%;
+       
+    }
+    .container3{
+        margin-top: 50%;
+        margin-left: -40%;
+        width: 100%;
+        justify-content: left;
+    }
+    
+}
