@@ -204,7 +204,7 @@ hr{
     padding-left: 50%;
     padding-right: 50%;
     margin-left: -80%;
-    margin-top: 40%;
+    margin-top: 42%;
     padding-top: 20%;
     padding-bottom: 20%;
     /* padding: 50% 20% ; */
@@ -467,9 +467,19 @@ hr{
     .top_nav{
         font-size: 14px;
         margin-top: 0px;
+        padding-top: 10px;
+        text-align: left;
     }
     .top_nav_data{
-        font-size: 18px;
+        font-size: 16px;
+        margin-left: 7%;
+        /* margin-top: 2%;
+        padding-right: 10px; */
+        /* margin-left: -10%;
+        padding-left: -500px; */
+        /* width: auto; */
+        color: red;
+        /* text-align: left; */
     }
     /* for second navbar */
     .Th-lines{
