@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { storage } from "../redux/action";
+import { storage } from "../../redux/action";
 import "./Product.css";
 
 export const ProductCard = ({ item }) => {

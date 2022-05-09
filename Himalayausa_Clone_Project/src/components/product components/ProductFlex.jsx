@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { storage } from "../redux/action";
+import { storage } from "../../redux/action";
 import "./productflex.css";
 
 export const ProductFlex = ({item}) => {

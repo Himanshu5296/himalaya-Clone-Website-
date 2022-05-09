@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import "./Product.css";
 import { useDispatch, useSelector } from "react-redux";
-import { filterdata, sortdata } from "../redux/action";
+import { filterdata, sortdata } from "../../redux/action";
 import {  useNavigate,Link } from "react-router-dom";
 import { ProductFlex } from "./ProductFlex";
 import { AuthContext } from "../Context/AuthContext";

@@ -2,7 +2,7 @@ import React from 'react'
 import { Route,Routes } from 'react-router-dom'
 import Home from '../components/HOME_PAGE/Home/Home'
 import Navbar from '../components/HOME_PAGE/NAVBAR/Navbar'
-import Footer from '../Footer/Footer'
+import Footer from '../components/Footer/Footer'
 import { Category } from '../product components/Category';
 import { Cart } from '../product components/Cart';
 import { Address } from '../PaymentCard/Address'
@@ -32,7 +32,6 @@ const MainRoutes = () => {
         <Route path='/Success' element={<Success/>}></Route>
         <Route path='/Login' element={<Login/>}></Route>
         <Route path='/otp' element={<OTPPAGE/>}></Route>
-        {/* <Route path='/' element={<Shop/>}></Route> */}
       </Routes>
       <Footer/>
     </div>

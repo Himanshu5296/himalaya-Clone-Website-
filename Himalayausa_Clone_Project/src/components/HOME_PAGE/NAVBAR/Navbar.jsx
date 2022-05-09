@@ -2,13 +2,10 @@ import "./navbar.css"
 import { Link, NavLink } from 'react-router-dom'
 import React, { useState } from 'react'
 import searchBtn from '../../Images/search.png'
-// import X from '../../Images/X.jpg'
-
 import X from '../../Images/X.jpg'
 import lines from '../../Images/3lines.jpg'
 import { useNavigate } from "react-router-dom"
-import Register from "../../../SignIn/Register"
-import SignIn from "../../../SignIn/SignIn"
+
 
 
 
