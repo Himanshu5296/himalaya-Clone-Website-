@@ -14,7 +14,7 @@ This is an E-Commerce website which selling health care products under the name 
     <li>Material UI</li>
   </ul>
  
-  <h3>Homepage Screenshot</h3>
+  #Homepage Screenshot
  ![image](https://user-images.githubusercontent.com/99639007/171355936-7898dd92-a783-46f2-83cd-4d0bd7a0e2ae.png)
   
 
